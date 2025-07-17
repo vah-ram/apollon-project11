@@ -1167,7 +1167,7 @@ img {
         }
 
     .mecenatSection .titleSpan {
-        top: -60px;
+        top: -50px;
         text-align: center;
     }
 
@@ -1177,7 +1177,7 @@ img {
         font-size: 30px;
         left: 15%;
         position: absolute;
-        top: 50px;
+        top: 60px;
     }
 
     .mecenatSection div .inputPart .inputSection{
@@ -1191,8 +1191,8 @@ img {
         width: 100vw;
         position: absolute;
         left: -170px;
-        padding-left: 10px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 40px;
     }
     
     .mecenatSection div .inputPart .inputSection .messageSpan {
