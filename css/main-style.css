@@ -1096,6 +1096,15 @@ img {
         transform: translate(0, 40px);
     }
 
+    .premiaMain div{
+        padding-left: 50px;
+    }
+
+    .premiaMain .starPart h2 {
+        width: 200px;
+        font-size: 20px;
+    }
+
     .partnersFooter {
         margin: 0 auto;
         text-align: center;
@@ -1106,9 +1115,9 @@ img {
     }
 
     .partnersFooter h1 {
-        width: 300px;
+        width: 150px;
         position: absolute;
-        left: 20%;
+        left: 25%;
     }
 
     .mecenatSection {
@@ -1156,30 +1165,32 @@ img {
         .mecenatSection div .numbersSpan div:last-child {
             text-align: right;
         }
-    
 
     .mecenatSection .titleSpan {
         top: -60px;
     }
 
     .mecenatSection .titleSpan .titleText {
-        width: 400px;
+        width: 200px;
         display: flex;
         flex-shrink: unset;
         gap: 20px;
+        font-size: 30px;
+        left: 15%;
+        position: absolute;
     }
 
     .mecenatSection div .inputPart .inputSection{
         width: 100%;
         height: 40%;
         margin-top: 50px;
-        left: 0;
+        left: -20px;
     }
 
     .mecenatSection div .inputPart {
         width: 100vw;
         position: absolute;
-        left: -150px;
+        left: -160px;
         padding-left: 10px;
         padding-right: 30px;
     }
