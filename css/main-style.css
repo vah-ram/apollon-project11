@@ -1168,16 +1168,16 @@ img {
 
     .mecenatSection .titleSpan {
         top: -60px;
+        text-align: center;
     }
 
     .mecenatSection .titleSpan .titleText {
-        width: 200px;
-        display: flex;
-        flex-shrink: unset;
+        width: 100px;
         gap: 20px;
         font-size: 30px;
         left: 15%;
         position: absolute;
+        top: 50px;
     }
 
     .mecenatSection div .inputPart .inputSection{
@@ -1190,7 +1190,7 @@ img {
     .mecenatSection div .inputPart {
         width: 100vw;
         position: absolute;
-        left: -160px;
+        left: -170px;
         padding-left: 10px;
         padding-right: 30px;
     }
