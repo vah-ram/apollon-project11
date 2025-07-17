@@ -1195,7 +1195,8 @@ img {
 
     .mecenatSection div .inputPart span {
         width: 160px;
-        padding-left: 20px;
+        padding-left: 35px;
+        overflow: hidden;
     }
     
     .mecenatSection div .inputPart .inputSection .messageSpan {
