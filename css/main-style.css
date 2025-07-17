@@ -1,5 +1,5 @@
 
-*{ padding: 0; margin: 0; box-sizing: border-box;}
+*{ padding: 0; margin: 0; box-sizing: border-box; }
 
 body {
     background: rgb(49, 49, 49);
@@ -18,6 +18,13 @@ body::-webkit-scrollbar-thumb {
     background: rgb(36, 36, 36);
 }
 
+#mainSection {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
 img {
     pointer-events: none;
 }
@@ -27,6 +34,8 @@ img {
     height: 100vh;
     background: url('../images/theatre-1.png') center center / cover no-repeat;
     position: relative;
+        overflow-x: hidden;
+
 }
 
 .leftContactsHeader {
@@ -798,7 +807,7 @@ img {
         display: none;
     }
 
-    .theatrePartCenter span:nth-child(3) {
+    #thatreSmallImgSpan{
         display: none;
     }
 
@@ -911,6 +920,7 @@ img {
     #phoneDiv .leftMainHeader{
         left: -250px;
         transition: .2s;
+        
     }
 
     #phoneDiv .leftMainHeader.view {
@@ -1026,7 +1036,7 @@ img {
     }
 
     .mainRightBar {
-        width: 100%;
+        width: 100% !important;
     }
 
     .phoneNumber {
@@ -1044,8 +1054,44 @@ img {
 }
 
 @media (max-width: 576px) {
+
+    .theatreFooter {
+        height: 100vh;
+    }
+
+    .theatrePartCenter nav {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .theatrePartCenter nav span {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+            .theatrePartCenter nav span p {
+                padding: 10px;
+            }
+
+    .theatreFooter nav .smallImages {
+        width: 70%;
+    }
+    
+    .theatreFooter nav .smallImages div{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap: -10px;
+    }
+
     .slideImgDiv {
-        width: 50vw;
+        width: 80vw;
         margin-bottom: -50px;
         transform: translate(0, 40px);
     }
@@ -1087,11 +1133,13 @@ img {
     }
 
     .mecenatSection div .bottomInfoDiv {
+        width: 90vw;
         height: 150px;
         flex-direction: column-reverse;
         gap: 20px;
         text-align: center;
         bottom: 50px;
+        left: 0;
     }
 
     .mecenatSection div .bottomInfoDiv button {
@@ -1102,24 +1150,43 @@ img {
         width: 90%;
         bottom: 50px;
         left: 0;
+        font-size: 10px;
     }
 
         .mecenatSection div .numbersSpan div:last-child {
             text-align: right;
         }
     
+
     .mecenatSection .titleSpan {
         top: -60px;
+    }
+
+    .mecenatSection .titleSpan .titleText {
+        width: 400px;
+        display: flex;
+        flex-shrink: unset;
+        gap: 20px;
     }
 
     .mecenatSection div .inputPart .inputSection{
         width: 100%;
         height: 40%;
-        margin-top: 10px;
+        margin-top: 50px;
+        left: 0;
+    }
+
+    .mecenatSection div .inputPart {
+        width: 100vw;
+        position: absolute;
+        left: -150px;
+        padding-left: 10px;
+        padding-right: 30px;
     }
     
     .mecenatSection div .inputPart .inputSection .messageSpan {
         width: 100%;
         margin-left: 0;
     }
+
 }
